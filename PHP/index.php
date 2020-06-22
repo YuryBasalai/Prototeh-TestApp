@@ -9,3 +9,15 @@ echo "<br /><i>Array of words:</i><br />";
 $array_word = explode(" ", $s);
 print_r($array_word);
 echo "<br />";
+
+echo "<br /><i>Case replacement:</i><br />";
+foreach (str_split($s) as $symbol) {
+	if (ctype_upper($symbol)) {
+		$symbol = strtolower($symbol);
+	} else if (ctype_lower($symbol)) {
+		$symbol = strtoupper($symbol);
+	}
+	echo $symbol;
+}
+echo "<br />";
+?>
