@@ -1,0 +1,19 @@
+#example {
+	position: relative;
+	height: 25vw;
+	width: 25vw;
+	background: #00FF00;
+	border: 4px dotted red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background 1s ease;
+}
+
+#example span {
+	color: black;
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+}
+
