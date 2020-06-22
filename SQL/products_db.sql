@@ -18,6 +18,5 @@ SELECT
 	AVG(price) AS priceAvg
 FROM products;
 
-/*create table*/
-CREATE TABLE products_1 LIKE products;
+/*writing to a table*/
 INSERT products_1 SELECT * FROM products WHERE MOD(id, 2) != 0;
