@@ -6,11 +6,11 @@ SELECT * FROM products_db.products;
 	('cookies', 'kg', 55),
 	('cucumbers', 'kg', 45);*/
 
-/*price comparison*/
-SELECT * FROM products WHERE price>50;
+/*get products which cost more than 50*/
+SELECT * FROM products WHERE price > 50;
 
 /*delete*/
-DELETE FROM products WHERE kind!=1;
+DELETE FROM products WHERE kind != 1;
 
 /*quantity and average price*/
 SELECT
