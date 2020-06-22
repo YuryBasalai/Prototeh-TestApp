@@ -2,6 +2,21 @@ let span = document.createElement('span');
 span.innerHTML = "Example";
 example.append(span);
 
+let close = document.getElementsByClassName("close")[0];
+
+close.onclick = () => {
+	modal_color.style.display = "none";
+	example.style.justifyContent = "flex-end";
+	example.style.alignItems = "flex-end";
+}
+
+window.onclick = (event) => {
+	if (event.target == modal_color) {
+		modal_color.style.display = "none";
+		example.style.justifyContent = "flex-end";
+		example.style.alignItems = "flex-end";
+	}
+}
 
 RgbToHex = (rgb) => {
 	var rgb = rgb.match(/^rgba?\([\s]*(\d+)[\s]*,[\s]*(\d+)[\s]*,[\s]*(\d+)[\s]*,?[\s]*(\d+.\d+[\s]*)?\)/i);
@@ -28,3 +43,4 @@ example.addEventListener('click', {
 		color();
 	}
 });
+
