@@ -8,3 +8,6 @@ SELECT * FROM products_db.products;
 
 /*price comparison*/
 SELECT * FROM products WHERE price>50;
+
+/*delete*/
+DELETE FROM products WHERE kind!=1;
