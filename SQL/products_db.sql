@@ -5,3 +5,6 @@ SELECT * FROM products_db.products;
 	('milk', '1', 15),
 	('cookies', 'kg', 55),
 	('cucumbers', 'kg', 45);*/
+
+/*price comparison*/
+SELECT * FROM products WHERE price>50;
